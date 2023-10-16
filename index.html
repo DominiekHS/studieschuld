@@ -5,30 +5,30 @@
 </head>
 <body>
     <!-- Voeg de nieuwe tekst hieronder toe -->
-    <p>Deze rekenhulp is gebaseerd op SF35, wat kortweg betekent dat je er uiterlijk 35 jaar over mag doen om je studieschuld terug te betalen.</p>
-    <p>Deze rekenhulp is en blijft een schatting, omdat de rente telkens voor 5 jaar wordt vastgezet. Stel dat de rekenhulp weergeeft dat je er 6 jaar en 6 maanden over doet om terug te betalen, dan zou je de schuld die je na 5 jaar nog hebt opnieuw hier moeten invullen met de rente die tegen die tijd geldt. Dan komt er bijvoorbeeld uit dat je die resterende schuld terugbetaalt in 1 jaar en 9 maanden, in plaats van in 1 jaar en 6 maanden.</p>
-    <p>Kijk op DUO voor de regels en welke waarden jij moet invullen.</p>
-    <p>Ik ben dit begonnen wegens ongenoegen over de rekenhulp van DUO. In het kort: DUO gaat er standaard vanuit dat je twee jaar wacht met aflossen en DUO rekent het minimumbedrag uit wat je per maand kwijt bent als je de gehele terugbetaalperiode (35 jaar bij SF35) wilt gebruiken. Daar komt nog eens bovenop dat er op deze manier maximaal rente wordt betaald.</p>
-    <p>Mijn wens was om een betere rekenhulp te maken. Het enige wat je in moet vullen is je studieschuld, het rentepercentage per jaar, het bedrag wat je maandelijks opzij wilt zetten en invullen hoelang je wilt wachten met aflossen. En de uitkomst geeft dan weer in hoeveel jaar en maanden je je schuld hebt betaald. Daarnaast geeft de rekenhulp weer hoeveel je extra hebt betaald aan rente.</p>
-    <p>Met deze rekenhulp krijgen studenten een goed en realistisch beeld over het terugbetalen van de studieschuld. Ook het effect van rente en het effect van wachten met aflossen of direct beginnen komt zo naar voren. Naar mijn mening is de huidige rekenhulp van DUO dus onvoldoende.</p>
-    <p>Gemaakt door: Dominiek H. Spin, Mechanical Engineering student aan Universiteit Twente.</p>
+    <p style="font-size: 14px;">Deze rekenhulp is gebaseerd op SF35, wat kortweg betekent dat je er uiterlijk 35 jaar over mag doen om je studieschuld terug te betalen.</p>
+    <p style="font-size: 14px;">Deze rekenhulp is en blijft een schatting, omdat de rente telkens voor 5 jaar wordt vastgezet. Stel dat de rekenhulp weergeeft dat je er 6 jaar en 6 maanden over doet om terug te betalen, dan zou je de schuld die je na 5 jaar nog hebt opnieuw hier moeten invullen met de rente die tegen die tijd geldt. Dan komt er bijvoorbeeld uit dat je die resterende schuld terugbetaalt in 1 jaar en 9 maanden, in plaats van in 1 jaar en 6 maanden.</p>
+    <p style="font-size: 14px;">Kijk op DUO voor de regels en welke waarden jij moet invullen.</p>
+    <p style="font-size: 14px;">Ik ben dit begonnen wegens ongenoegen over de rekenhulp van DUO. In het kort: DUO gaat er standaard vanuit dat je twee jaar wacht met aflossen en DUO rekent het minimumbedrag uit wat je per maand kwijt bent als je de gehele terugbetaalperiode (35 jaar bij SF35) wilt gebruiken. Daar komt nog eens bovenop dat er op deze manier maximaal rente wordt betaald.</p>
+    <p style="font-size: 14px;">Mijn wens was om een betere rekenhulp te maken. Het enige wat je in moet vullen is je studieschuld, het rentepercentage per jaar, het bedrag wat je maandelijks opzij wilt zetten en invullen hoelang je wilt wachten met aflossen. En de uitkomst geeft dan weer in hoeveel jaar en maanden je je schuld hebt betaald. Daarnaast geeft de rekenhulp weer hoeveel je extra hebt betaald aan rente.</p>
+    <p style="font-size: 14px;">Met deze rekenhulp krijgen studenten een goed en realistisch beeld over het terugbetalen van de studieschuld. Ook het effect van rente en het effect van wachten met aflossen of direct beginnen komt zo naar voren. Naar mijn mening is de huidige rekenhulp van DUO dus onvoldoende.</p>
+    <p style="font-size: 14px;">Gemaakt door: Dominiek H. Spin, Mechanical Engineering student aan Universiteit Twente.</p>
 
-    <h1>Studieschuld Calculator</h1>
-    <p>Vul de volgende gegevens in:</p>
+    <h1 style="font-size: 24px;">Studieschuld Calculator</h1>
+    <p style="font-size: 18px;">Vul de volgende gegevens in:</p>
     <form id="calculatorForm">
-        <label for="studieschuld">Studieschuld (in euro's):</label>
+        <label for="studieschuld" style="font-size: 14px;">Studieschuld (in euro's):</label>
         <input type="number" id="studieschuld" min="1" required><br>
-        <label for "rente">Rentepercentage per jaar:</label>
+        <label for="rente" style="font-size: 14px;">Rentepercentage per jaar:</label>
         <input type="number" id="rente" min="0" step="0.01" required><br>
-        <label for="betaling">Maandelijks bedrag (in euro's):</label>
+        <label for="betaling" style="font-size: 14px;">Maandelijks bedrag (in euro's):</label>
         <input type="number" id="betaling" min="1" required><br>
-        <label for="aflosmaanden">Maanden wachten met aflossen (0-24):</label>
+        <label for="aflosmaanden" style="font-size: 14px;">Maanden wachten met aflossen (0-24):</label>
         <input type="number" id="aflosmaanden" min="0" max="24" required><br>
         <input type="submit" value="Bereken">
     </form>
     <div id="resultaat" style="display:none;">
-        <h2>Resultaat:</h2>
-        <p id="bericht"></p>
+        <h2 style="font-size: 18px;">Resultaat:</h2>
+        <p id="bericht" style="font-size: 14px;"></p>
     </div>
     <script>
         document.getElementById("calculatorForm").addEventListener("submit", function (e) {
